@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "deploy": "wrangler publish src/index.ts --outdir=build",
+    "mesh-dev": "mesh dev",
+    "mesh-start": "mesh start",
+    "build": "mesh build",
+    "dev": "wrangler dev src/index.ts --local --minify",
+    "test": "uvu -r tsm test"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^3.0.0",
+    "@types/service-worker-mock": "^2.0.1",
+    "service-worker-mock": "^2.0.5",
+    "tsm": "^2.2.1",
+    "uvu": "^0.5.3",
+    "wrangler": "^2.0.0"
+  },
+  "dependencies": {
+    "@graphql-mesh/cli": "^0.73.1",
+    "@graphql-mesh/graphql": "^0.27.2",
+    "graphql": "^16.5.0"
+  }
+}

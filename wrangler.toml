@@ -1,0 +1,10 @@
+name = "cf-worker-graphql-mesh"
+
+account_id = "189c55a3a3f424c3df1aa90464b30f6a"
+
+workers_dev = true
+compatibility_date = "2022-05-03"
+node_compat = true
+
+[vars]
+DEBUG = 1
